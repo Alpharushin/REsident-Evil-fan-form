@@ -1,0 +1,93 @@
+/* GENERAL */
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	font-family: 'PT Sans', Sans-Serif;
+	background-image: url('../img/XvLxxho5GQ0.jpg') ;
+	color: #e44845;
+}
+
+/* FORM */
+
+textarea{
+	resize: none;
+	-moz-transform: rotate(351deg) translate(0px, 14px) skew(-23deg, 9deg);
+	-webkit-transform: rotate(351deg) translate(0px, 14px) skew(-23deg, 9deg);
+	-o-transform: rotate(351deg) translate(0px, 14px) skew(-23deg, 9deg);
+	-ms-transform: rotate(351deg) translate(0px, 14px) skew(-23deg, 9deg);
+	transform: rotate(351deg) translate(0px, 14px) skew(-23deg, 9deg);
+}
+
+.contact_form {
+	width: 600px;
+	height: auto;
+	
+	margin: 50px auto 50px;
+}
+
+.contact_form h2 {
+	font-size: 28px;
+	margin: 0 0 0px;
+}
+
+.contact_form .subtitle {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.contact_form label {
+	width: 100%;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.contact_form input[type="text"], .contact_form input[type="email"] {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 4px;
+	font-size: 20px;
+	
+}
+
+.contact_form input[type="submit"] {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	
+	
+}
+
+
+.form__group {
+	position: relative;
+	padding: 15px;
+}
+
+
+
+/* ERRORS */
+
+.form__group.error {
+	background-color: #ffebee;
+}
+
+.form__tooltip {
+	background: #e44845;
+	padding: 0.9375rem 1.25rem;
+	border-radius: 0.25rem;
+	white-space: nowrap;
+	color: #fff; 
+	margin-bottom: 15px;
+	display: block;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resident Evil Fan Form</title>
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+
+
+
+<form 	id="form"
+		action="php/send.php"
+		method="POST" 
+		class="contact_form"
+		novalidate >
+
+		<h2>Фанат серии Resident Evil?</h2>
+		<div class="subtitle">тогда заполняй быстрее)</div>
+		
+		<div class="form__group">
+			<label for="f_name">Имя</label>
+			<input type="text" id="f_name" name="name" placeholder="">
+		</div>
+		
+		<div class="form__group">
+			<label for="f_email">email</label>
+			<input type="email" id="f_email" name="email" placeholder="">
+		</div>
+
+		<div class="form__group">
+			<label for="f_message">Пожелание или любой месседж</label>
+			<textarea name="message" id="f_message" cols="30" rows="10" style="margin-bottom: 20px; width: 100%;"></textarea>
+		</div>
+
+
+		<div class="form__group">
+			<label for="f_terms">
+				<input type="checkbox" id="f_terms" name="terms" placeholder="" data-fvalid="required">
+				Я жду Biohazard RE:2 !
+			</label>
+		</div>
+
+
+		<div class="form__group">
+			<label for="f_no">
+				<input type="checkbox" id="f_no" name="simple">
+				Играю только на консолях!
+			</label>
+		</div>
+
+		<h3>Любимая часть игры</h3>
+		<div class="form__group">
+			<label>
+				<input type="radio" name="radio-group" data-fvalid="required">
+				Resident Evil 
+			</label>
+			<label>
+				<input type="radio" name="radio-group" data-fvalid="required">
+				Resident Evil 2
+			</label>
+			<label>
+				<input type="radio" name="radio-group" data-fvalid="required">
+				Resident Evil 3 Nemesis
+			</label>
+			<label>
+				<input type="radio" name="radio-group" data-fvalid="required">
+				Resident Evil 0
+			</label>
+			<label>
+				<input type="radio" name="radio-group" data-fvalid="required">
+				Resident Evil Remake
+			</label>
+		</div>
+
+		<h3>Любимый персонаж</h3>
+		<div class="form__group">
+			<label>
+				<input type="radio" name="radio-simple">
+				Крис Редфилд
+			</label>
+			<label>
+				<input type="radio" name="radio-simple">
+				Джилл Валентайн
+			</label>
+			<label>
+				<input type="radio" name="radio-simple">
+				Леон Кеннеди
+			</label>
+			<label>
+				<input type="radio" name="radio-simple">
+				Клэр Редфилд
+			</label>
+			<label>
+				<input type="radio" name="radio-simple">
+				Ребекка Чемберс
+			</label>
+		</div>
+
+
+
+		<div class="form__group">
+			<label>
+				<input type="file" name="file-photo" data-fvalid="required">
+				Прикреплённый файл
+			</label>
+		</div>
+
+
+		<input type="submit" value="Отправить">
+		<br><br>
+		<button id="clear">Сброс формы</button>
+
+	</form>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/form-validation.js"></script>
+</body>
+</html>
